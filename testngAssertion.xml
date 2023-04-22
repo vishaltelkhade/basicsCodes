@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteSoftAssertion">
+	<test thread-count="5" name="TestSoftAssertion">
+		<classes>
+			<class name="com.test.Softassertion">
+				<methods>
+					<include name="facebookLogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

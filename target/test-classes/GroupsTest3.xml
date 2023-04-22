@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- THIS IS GROUP METHOD AT ******* SUITE LEVEL *********-->
+<!-- I GUESS WE CANNOT DEFINE META GROUP AT SUITE LEVEL ,WE CAN DEFINE NORMAL GROUP ONLY AT SUITE LEVEL-->
+<suite name="GroupsSuite">
+	<groups>
+		<run>
+			<include name="regression" /> <!-- TO RUN GROUP NAME AT INCLUDE TAG-->
+		</run>
+	</groups>
+	<test name="GroupsTest">
+		<classes>
+			<class name="groupTest.GroupTest1" />
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+	<test name="GroupsTest1">
+		<classes>
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+</suite> 

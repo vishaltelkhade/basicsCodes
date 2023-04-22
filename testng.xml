@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browsername" value="chrome" />
+	<parameter name="sleeptime" value="4000" />
+	<parameter name="Url" value="https://www.wikipedia.org/" />
+
+	<test name="Test">
+		<classes>
+			<class name="PractiseParameters.googleAndFlipkart">
+				<methods>
+					<include name="Enterurl" />
+					<include name="VerifyTitle" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="PractiseParameters.googleAndFlipkart">
+				<methods>
+					<include name="Enterurl" />
+					<include name="VerifyTitle" />
+					<include name="VerifyWikititle" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

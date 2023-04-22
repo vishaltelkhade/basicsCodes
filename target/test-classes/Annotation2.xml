@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Annotaion2Suite">
+	<test name="LogInAnnotaion2Test">
+		<classes>
+			<class name="com.test.Annotaition2">
+				<methods>
+					<include name="launchApp" />
+					<include name="EnterLoginInfo" />
+					<include name="verifylogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="VerifymyInfoTest">
+		<classes>
+			<class name="com.test.Annotaition2">
+				<methods>
+					<include name="launchApp" />
+					<include name="EnterLoginInfo" />
+					<include name="verifylogin" />
+					<include name="NavigateToInfo" />
+					<include name="VerifyMyInfo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

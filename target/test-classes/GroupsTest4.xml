@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupsSuite">
+	<groups>
+		<run>
+			<include name="All" /> <!-- THIS IS PARTIAL GROUP NAME MEANS WE DEFINE GROUP NAME AS "All" AT CLASS LEVEL-->
+		</run>
+	</groups>
+	<test name="GroupsTest">
+		<classes>
+			
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+	<test name="GroupsTest1">
+		<classes>
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+</suite> 

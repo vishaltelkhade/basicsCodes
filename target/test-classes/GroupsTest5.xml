@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<!-- SO NOW IF I WANT TO RUN "functional" GROUP AS COMMOM SO I HAVE TO DEFINE IT AT SUITE LEVEL-->
+<!-- AND WITH "fuctional" I WANT EXECUTE "regression" AND "sanity" SO I DEFINE THAT AT TEST LEVEL -->
+<!-- THIS IS CALLED SUITE LEVEL AND TEST LEVEL GROUPING-->
+
+
+
+<suite name="GroupsSuite"> 
+	<groups>  <!-- SO THIS IS SUITE LEVEL GROUPING-->                                                       
+			<run>
+				<include name="functional" />          
+			</run>
+		</groups>
+                           
+	<test name="GroupsTest">
+		<groups> <!-- SO THIS IS TEST LEVEL GROUPING-->                                                    
+			<run>
+				<include name="regression" /> 
+			</run>
+		</groups>
+		<classes>
+			<class name="groupTest.GroupTest1" />
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+<test name="GroupsTest2">
+		<groups> <!-- SO THIS IS TEST LEVEL GROUPING--> 
+			<run>
+				<include name="windows.*" />   <!-- THIS IS CALLED REGULAR EXPRESSION....INSTEAD OF WRITING windows.regression,windows.functional-->       
+			</run>                             <!-- WE CAN WROTE LIKE THAT,i.e windows.*-->
+		</groups>
+		<classes>
+			<class name="groupTest.GroupTest2" />
+		</classes>
+	</test>
+</suite> 
